@@ -78,7 +78,7 @@ var ACCENTS=['auto','#b42318','#1e3a5f','#0f766e','#6d28d9','#166534','#b45309',
 var DEF_OPTS={layout:'modern',photo:'on',density:'comfortable',typo:'grot',accent:'auto',motion:'on',
  secs:{highlights:1,timeline:1,casestudy:1,projects:1,testimonials:1,speaking:1,references:1,practices:1,community:1,achievements:1,interests:1,qr:1}};
 
-var state={lang:'en',theme:'gargantua',data:SAMPLE,opts:JSON.parse(JSON.stringify(DEF_OPTS)),preview:false};
+var state={lang:'en',theme:'quasar',data:SAMPLE,opts:JSON.parse(JSON.stringify(DEF_OPTS)),preview:false};
 try{
   var sl=localStorage.getItem(K.lang); if(sl==='en'||sl==='fa')state.lang=sl;
   else if((navigator.language||'en').indexOf('fa')===0)state.lang='fa';
