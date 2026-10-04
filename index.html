@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="gargantua" data-space="1" data-motion="on" data-layout="modern" data-density="comfortable" data-photo="on" data-typo="grot">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zahra Azarbayjani — Mathematical Engineer · Planning & Operations Specialist</title>
+<meta name="description" content="Mathematical Engineer — Planning, Operations, Precision & Markets.">
+<meta name="theme-color" content="#05060d">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Zahra Azarbayjani — Mathematical Engineer · Planning & Operations Specialist">
+<meta property="og:description" content="Planning, Operations, Precision & Markets.">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://mra.dev">
+<script type="application/ld+json" id="jsonld">{}</script>
+
+<!-- Include Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/800.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-serif-4@5/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-serif-4@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@5/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@5/800.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  bg:'rgb(var(--bg)/<alpha-value>)', soft:'rgb(var(--soft)/<alpha-value>)',
+  card:'rgb(var(--card)/<alpha-value>)', chip:'rgb(var(--chip)/<alpha-value>)',
+  brd:'rgb(var(--brd)/<alpha-value>)', ink:'rgb(var(--ink)/<alpha-value>)',
+  mut:'rgb(var(--mut)/<alpha-value>)', acc:'rgb(var(--acc)/<alpha-value>)',
+  acc2:'rgb(var(--acc2)/<alpha-value>)'
+}, fontFamily: { body:['var(--ff-body)'], disp:['var(--ff-disp)'], mono:['var(--ff-mono)'] } } } };
+</script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/motion@11.11.17/dist/motion.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<canvas id="space-cv" aria-hidden="true"></canvas>
+<a href="#doc" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:start-2 focus:z-[100] focus:bg-acc focus:text-white focus:px-4 focus:py-2 focus:rounded-lg" data-i18n="skip">Skip to content</a>
+
+<div class="pd-bar no-print" role="toolbar" aria-label="PDF preview">
+  <div class="max-w-[820px] mx-auto px-3 sm:px-5 h-16 flex items-center gap-2 sm:gap-3">
+    <button class="btn btn-ghost" style="background:#fff;border-color:#d7d9de;color:#161a23" data-action="pd-back">
+      <i data-lucide="arrow-left" class="w-4 h-4 rtl-flip"></i><span data-i18n="preview_back">Back</span>
+    </button>
+    <span id="pd-pages" class="mono-label hidden sm:block" style="color:#5c6470"></span>
+    <span class="hidden md:block text-[11px] ms-auto" style="color:#5c6470" data-i18n="preview_hint">Choose “Save as PDF” as the destination in the print dialog.</span>
+    <button class="btn btn-primary ms-auto md:ms-0" data-action="pd-print">
+      <i data-lucide="printer" class="w-4 h-4"></i><span data-i18n="preview_print">Print / Save as PDF</span>
+    </button>
+  </div>
+</div>
+
+<header id="topbar" class="no-print fixed top-0 inset-x-0 z-50">
+  <div class="max-w-[1080px] mx-auto px-3 sm:px-6 h-14 flex items-center gap-1.5 sm:gap-2">
+    <span class="font-mono text-xs font-semibold flex items-center gap-1 me-1 shrink-0"><span class="t-acc">~/</span><span id="brand-name">resume</span></span>
+    <span class="hidden lg:inline mono-label ltr">A4 · PDF-ready · JSON-driven</span>
+    <div class="ms-auto flex items-center gap-1.5 sm:gap-2">
+      <div class="seg" role="group" aria-label="Language">
+        <button data-action="set-lang" data-value="en" id="seg-en" aria-pressed="false">EN</button>
+        <button data-action="set-lang" data-value="fa" id="seg-fa" aria-pressed="false">FA</button>
+      </div>
+      <div class="relative">
+        <button class="icon-btn" data-action="toggle-pop" data-pop="pop-settings" aria-haspopup="true" aria-expanded="false" aria-label="Settings" data-i18n-aria="settings"><i data-lucide="settings-2" class="w-4 h-4"></i></button>
+        <div id="pop-settings" class="pop rounded-xl p-1.5 hidden text-sm" style="background:rgb(var(--card));border:1px solid rgb(var(--brd));box-shadow:var(--sh)" role="menu">
+          <p class="mono-label px-3 pt-2 pb-1" data-i18n="layout">Layout</p>
+          <div class="opt-row px-2 pb-2">
+            <button class="opt-pill" data-opt="layout" data-value="modern" aria-pressed="true"><i data-lucide="columns-2" class="w-3.5 h-3.5"></i><span data-i18n="modern">Modern</span></button>
+            <button class="opt-pill" data-opt="layout" data-value="classic" aria-pressed="false"><i data-lucide="rows-3" class="w-3.5 h-3.5"></i><span data-i18n="classic">Classic</span></button>
+          </div>
+          <p class="mono-label px-3 pb-1" data-i18n="typography">Typography</p>
+          <div class="opt-row px-2 pb-2">
+            <button class="opt-pill" data-opt="typo" data-value="grot" aria-pressed="true"><span class="font-disp font-bold">Ag</span><span data-i18n="type_grot">Grotesk</span></button>
+            <button class="opt-pill" data-opt="typo" data-value="serif" aria-pressed="false"><span class="font-bold" style="font-family:'Source Serif 4',serif">Ag</span><span data-i18n="type_serif">Serif</span></button>
+          </div>
+          <p class="mono-label px-3 pb-1.5" data-i18n="accent">Accent color</p>
+          <div class="flex flex-wrap gap-2 px-3 pb-2" id="acc-row"></div>
+          <p class="mono-label px-3 pb-1" data-i18n="photo">Photo</p>
+          <div class="opt-row px-2 pb-2">
+            <button class="opt-pill" data-opt="photo" data-value="on" aria-pressed="true"><i data-lucide="image" class="w-3.5 h-3.5"></i><span data-i18n="show">Show</span></button>
+            <button class="opt-pill" data-opt="photo" data-value="off" aria-pressed="false"><i data-lucide="image-off" class="w-3.5 h-3.5"></i><span data-i18n="hide">Hide</span></button>
+          </div>
+          <p class="mono-label px-3 pb-1" data-i18n="density">Density</p>
+          <div class="opt-row px-2 pb-2">
+            <button class="opt-pill" data-opt="density" data-value="comfortable" aria-pressed="true"><i data-lucide="expand" class="w-3.5 h-3.5"></i><span data-i18n="comfortable">Comfortable</span></button>
+            <button class="opt-pill" data-opt="density" data-value="compact" aria-pressed="false"><i data-lucide="shrink" class="w-3.5 h-3.5"></i><span data-i18n="compact">Compact</span></button>
+          </div>
+          <p class="mono-label px-3 pb-1" data-i18n="motion">Space effects</p>
+          <div class="opt-row px-2 pb-2">
+            <button class="opt-pill" data-opt="motion" data-value="on" aria-pressed="true"><i data-lucide="sparkles" class="w-3.5 h-3.5"></i><span data-i18n="show">Show</span></button>
+            <button class="opt-pill" data-opt="motion" data-value="off" aria-pressed="false"><i data-lucide="pause" class="w-3.5 h-3.5"></i><span data-i18n="hide">Hide</span></button>
+          </div>
+          <div class="hairline my-1"></div>
+          <p class="mono-label px-3 pt-1 pb-1.5" data-i18n="sections">Sections</p>
+          <div class="flex items-center justify-between px-3 py-1.5"><span class="text-[13px]" data-i18n="sec_highlights">Key highlights</span><button class="sw" data-sec="highlights" aria-pressed="true" aria-label="Toggle highlights"></button></div>
+          <div class="flex items-center justify-between px-3 py-1.5"><span class="text-[13px]" data-i18n="sec_timeline">Career timeline</span><button class="sw" data-sec="timeline" aria-pressed="true" aria-label="Toggle timeline"></button></div>
+          <div class="flex items-center justify-between px-3 py-1.5"><span class="text-[13px]" data-i18n="sec_casestudy">Case study</span><button class="sw" data-sec="casestudy" aria-pressed="true" aria-label="Toggle case study"></button></div>
+          <div class="flex items-center justify-between px-3 py-1.5"><span class="text-[13px]" data-i18n="sec_projects">Projects</span><button class="sw" data-sec="projects" aria-pressed="true" aria-label="Toggle projects"></button></div>
+          <div class="flex items-center justify-between px-3 py-1.5"><span class="text-[13px]" data-i18n="sec_testimonials">Testimonials</span><button class="sw" data-sec="testimonials" aria-pressed="true" aria-label="Toggle testimonials"></button></div>
+          <div class="flex items-center justify-between px-3 py-1.5"><span class="text-[13px]" data-i18n="sec_speaking">Speaking & writing</span><button class="sw" data-sec="speaking" aria-pressed="true" aria-label="Toggle speaking"></button></div>
+          <div class="flex items-center justify-between px-3 py-1.5"><span class="text-[13px]" data-i18n="sec_references">References</span><button class="sw" data-sec="references" aria-pressed="true" aria-label="Toggle references"></button></div>
+          <div class="flex items-center justify-between px-3 py-1.5"><span class="text-[13px]" data-i18n="sec_practices">Practices</span><button class="sw" data-sec="practices" aria-pressed="true" aria-label="Toggle practices"></button></div>
+          <div class="flex items-center justify-between px-3 py-1.5"><span class="text-[13px]" data-i18n="sec_community">Community</span><button class="sw" data-sec="community" aria-pressed="true" aria-label="Toggle community"></button></div>
+          <div class="flex items-center justify-between px-3 py-1.5"><span class="text-[13px]" data-i18n="sec_achievements">Recognition</span><button class="sw" data-sec="achievements" aria-pressed="true" aria-label="Toggle achievements"></button></div>
+          <div class="flex items-center justify-between px-3 py-1.5"><span class="text-[13px]" data-i18n="sec_interests">Interests</span><button class="sw" data-sec="interests" aria-pressed="true" aria-label="Toggle interests"></button></div>
+          <div class="flex items-center justify-between px-3 py-1.5 pb-2"><span class="text-[13px]" data-i18n="sec_qr">QR code</span><button class="sw" data-sec="qr" aria-pressed="true" aria-label="Toggle QR"></button></div>
+        </div>
+      </div>
+      <div class="relative">
+        <button class="icon-btn" data-action="toggle-pop" data-pop="pop-theme" aria-haspopup="true" aria-expanded="false" aria-label="Theme" data-i18n-aria="theme"><i data-lucide="palette" class="w-4 h-4"></i></button>
+        <div id="pop-theme" class="pop rounded-xl p-1.5 hidden" style="background:rgb(var(--card));border:1px solid rgb(var(--brd));box-shadow:var(--sh)" role="menu"></div>
+      </div>
+      <div class="relative">
+        <button class="icon-btn" data-action="toggle-pop" data-pop="pop-data" aria-haspopup="true" aria-expanded="false" aria-label="Data" data-i18n-aria="data"><i data-lucide="file-json" class="w-4 h-4"></i></button>
+        <div id="pop-data" class="pop rounded-xl p-1.5 hidden text-sm" style="background:rgb(var(--card));border:1px solid rgb(var(--brd));box-shadow:var(--sh)" role="menu">
+          <button class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-chip text-start" data-action="import-json"><i data-lucide="upload" class="w-4 h-4 t-acc"></i><span data-i18n="import_json">Import JSON</span></button>
+          <button class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-chip text-start" data-action="export-json"><i data-lucide="download" class="w-4 h-4 t-acc"></i><span data-i18n="export_json">Export current JSON</span></button>
+          <button class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-chip text-start" data-action="download-vcard"><i data-lucide="contact" class="w-4 h-4 t-acc"></i><span data-i18n="vcard_btn">Download vCard (.vcf)</span></button>
+          <button class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-chip text-start" data-action="download-sample"><i data-lucide="file-down" class="w-4 h-4 t-acc"></i><span data-i18n="sample_json">Download example JSON</span></button>
+          <div class="hairline my-1"></div>
+          <button class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-chip text-start text-mut" data-action="reset-data"><i data-lucide="refresh-ccw" class="w-4 h-4"></i><span data-i18n="reset_data">Reset to sample</span></button>
+        </div>
+      </div>
+      <button class="btn btn-primary" data-action="print"><i data-lucide="printer" class="w-4 h-4"></i><span class="hidden sm:inline" data-i18n="download_pdf">Download PDF</span></button>
+    </div>
+  </div>
+  <div id="progress" aria-hidden="true"></div>
+</header>
+
+<main class="relative z-10 pt-24 pb-16 px-3 sm:px-6">
+  <div class="sheet max-w-[980px] mx-auto">
+    <div class="sheet-accent" aria-hidden="true"></div>
+    <div class="cosmos no-print pd-hide"><canvas id="bh-cv" aria-hidden="true"></canvas></div>
+    <div class="wm no-print" id="wm" aria-hidden="true"></div>
+    <div id="doc"></div>
+  </div>
+  <p class="pd-hide no-print max-w-[980px] mx-auto mt-5 text-center mono-label">
+    <span data-i18n="footer_note">JSON-driven resume — edit the data, the document follows.</span>
+    <button class="t-acc hover:underline font-mono ltr ms-1" data-action="download-sample">resume.json ↓</button>
+  </p>
+</main>
+
+<div id="toasts" aria-live="polite"></div>
+<input type="file" id="json-file" accept=".json,application/json" class="hidden" tabindex="-1" aria-hidden="true">
+<noscript><p style="padding:2rem;text-align:center">This resume requires JavaScript.</p></noscript>
+
+<script type="application/json" id="resume-data">
+{
+  "meta": {
+    "updated": {
+      "en": "Updated — October 2026",
+      "fa": "به‌روزرسانی — اکتبر ۲۰۲۶"
+    }
+  },
+  "profile": {
+    "name": "Zahra Azarbayjani",
+    "title": {
+      "en": "Mathematical Engineer · Planning & Operations Specialist",
+      "fa": "مهندس ریاضی · متخصص برنامه‌ریزی و عملیات"
+    },
+    "tagline": {
+      "en": "Mathematics · Precision · Planning · Markets · Operations",
+      "fa": "ریاضی · دقت · برنامه‌ریزی · بازارها · عملیات"
+    },
+    "location": {
+      "en": "Abhar, Zanjan, Iran",
+      "fa": "ابهر، زنجان، ایران"
+    },
+    "email": "mhrnoshazerbaijani@gmail.com",
+    "phone": "+98 919 750 0242",
+    "website": "",
+    "github": "",
+    "linkedin": "",
+    "photo": "img/profile.png",
+    "available": {
+      "en": "Open to Full-time · Part-time",
+      "fa": "آماده همکاری تمام‌وقت · پاره‌وقت"
+    }
+  },
+  "summary": {
+    "en": "Applied Mathematics graduate with a solid foundation in pure mathematics and practical experience across industrial operations, quality control, laboratory work, financial markets, and technology startups. Combines 8 years of activity in securities trading with 5 years as Planning Manager and team secretary in a software development startup focused on web and blockchain. Recognized for fast learning, high precision, structured coordination, and adaptability in both technical and operational environments. Seeking roles in dynamic settings to expand expertise and contribute to growth-oriented teams.",
+    "fa": "فارغ‌التحصیل ریاضی کاربردی با پایه قوی در ریاضی محض و تجربه عملی در حوزه‌های عملیات صنعتی، کنترل کیفیت، آزمایشگاه، بازارهای مالی و استارتاپ‌های فناوری. ترکیب ۸ سال فعالیت در معاملات اوراق بهادار با ۵ سال تجربه به‌عنوان مدیر برنامه‌ریزی و منشی تیم در یک استارتاپ توسعه نرم‌افزار با تمرکز بر وب و بلاکچین. شناخته‌شده به‌خاطر یادگیری سریع، دقت بالا، هماهنگی ساختاریافته و سازگاری در محیط‌های فنی و عملیاتی. علاقه‌مند به فعالیت در محیط‌های پویا برای گسترش تخصص و مشارکت در تیم‌های رشدمحور."
+  },
+  "industries": [
+    {
+      "en": "Financial Markets",
+      "fa": "بازارهای مالی"
+    },
+    {
+      "en": "Technology Startups",
+      "fa": "استارتاپ‌های فناوری"
+    },
+    {
+      "en": "Medical Equipment",
+      "fa": "تجهیزات پزشکی"
+    },
+    {
+      "en": "Industrial Production",
+      "fa": "تولید صنعتی"
+    },
+    {
+      "en": "Quality Control",
+      "fa": "کنترل کیفیت"
+    },
+    {
+      "en": "Operations & Planning",
+      "fa": "عملیات و برنامه‌ریزی"
+    }
+  ],
+  "engagement": [
+    {
+      "en": "Full-time",
+      "fa": "تمام‌وقت"
+    },
+    {
+      "en": "Part-time",
+      "fa": "پاره‌وقت"
+    },
+    {
+      "en": "Operations & Planning",
+      "fa": "عملیات و برنامه‌ریزی"
+    },
+    {
+      "en": "Quality Control",
+      "fa": "کنترل کیفیت"
+    },
+    {
+      "en": "Administrative Coordination",
+      "fa": "هماهنگی اداری"
+    },
+    {
+      "en": "Process Support roles",
+      "fa": "نقش‌های پشتیبانی فرآیند"
+    }
+  ],
+  "competencies": [
+    {
+      "en": "Fast Learning",
+      "fa": "یادگیری سریع"
+    },
+    {
+      "en": "High Precision",
+      "fa": "دقت بالا"
+    },
+    {
+      "en": "Team Coordination",
+      "fa": "هماهنگی تیمی"
+    },
+    {
+      "en": "Time Management",
+      "fa": "مدیریت زمان"
+    },
+    {
+      "en": "Strong Communication",
+      "fa": "ارتباط قوی"
+    },
+    {
+      "en": "Patient Problem Solving",
+      "fa": "حل مسئله با حوصله"
+    },
+    {
+      "en": "Structured Planning",
+      "fa": "برنامه‌ریزی ساختاریافته"
+    },
+    {
+      "en": "Adaptability",
+      "fa": "سازگاری"
+    }
+  ],
+  "practices": [
+    {
+      "en": "Precision-oriented work",
+      "fa": "کار دقت‌محور"
+    },
+    {
+      "en": "Structured planning",
+      "fa": "برنامه‌ریزی منظم"
+    },
+    {
+      "en": "Continuous learning",
+      "fa": "یادگیری مستمر"
+    },
+    {
+      "en": "Team collaboration",
+      "fa": "همکاری تیمی"
+    },
+    {
+      "en": "Process awareness",
+      "fa": "آگاهی از فرآیند"
+    },
+    {
+      "en": "Adaptability in new environments",
+      "fa": "سازگاری با محیط جدید"
+    }
+  ],
+  "philosophy": {
+    "en": "Learn fast, work precisely, and grow continuously in every environment.",
+    "fa": "سریع یاد بگیر، دقیق کار کن و در هر محیطی به‌طور مستمر رشد کن."
+  },
+  "stats": [
+    {
+      "num": 8,
+      "suf": "+",
+      "label": {
+        "en": "Years in financial markets",
+        "fa": "سال فعالیت در بازارهای مالی"
+      }
+    },
+    {
+      "num": 5,
+      "suf": "",
+      "label": {
+        "en": "Years in tech startup",
+        "fa": "سال فعالیت در استارتاپ فناوری"
+      }
+    },
+    {
+      "num": 4,
+      "suf": "+",
+      "label": {
+        "en": "Industrial & operational roles",
+        "fa": "نقش صنعتی و عملیاتی"
+      }
+    },
+    {
+      "num": 2,
+      "suf": "",
+      "label": {
+        "en": "Native languages",
+        "fa": "زبان مادری"
+      }
+    }
+  ],
+  "highlights": [
+    {
+      "icon": "trending-up",
+      "text": {
+        "en": "8 years of active experience in securities and financial markets",
+        "fa": "۸ سال تجربه فعال در بازار اوراق بهادار و بازارهای مالی"
+      },
+      "metric": {
+        "en": "8+ years",
+        "fa": "۸+ سال"
+      }
+    },
+    {
+      "icon": "users",
+      "text": {
+        "en": "5 years as Planning Manager and team secretary in a software startup",
+        "fa": "۵ سال مدیر برنامه‌ریزی و منشی تیم در استارتاپ نرم‌افزاری"
+      },
+      "metric": {
+        "en": "5 years",
+        "fa": "۵ سال"
+      }
+    },
+    {
+      "icon": "target",
+      "text": {
+        "en": "High-precision work in surgical needle production for medical equipment",
+        "fa": "کار با دقت بسیار بالا در تولید سوزن جراحی تجهیزات پزشکی"
+      },
+      "metric": {
+        "en": "Precision focus",
+        "fa": "تمرکز بر دقت"
+      }
+    },
+    {
+      "icon": "layers",
+      "text": {
+        "en": "Diverse experience across industry, quality control, laboratory and operations",
+        "fa": "تجربه متنوع در صنعت، کنترل کیفیت، آزمایشگاه و عملیات"
+      },
+      "metric": {
+        "en": "Multi-domain",
+        "fa": "چندحوزه‌ای"
+      }
+    },
+    {
+      "icon": "brain",
+      "text": {
+        "en": "Strong foundation in Applied Mathematics with fast learning ability",
+        "fa": "پایه قوی در ریاضی کاربردی همراه با توانایی یادگیری سریع"
+      },
+      "metric": {
+        "en": "Math + Adaptability",
+        "fa": "ریاضی + سازگاری"
+      }
+    },
+    {
+      "icon": "globe",
+      "text": {
+        "en": "Native in Persian and Turkish, functional in Arabic and English",
+        "fa": "مسلط به فارسی و ترکی، توانمند در عربی و انگلیسی"
+      },
+      "metric": {
+        "en": "Multilingual",
+        "fa": "چندزبانه"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "company": "Mr.A Startup Team",
+      "role": {
+        "en": "Planning Manager & Team Secretary",
+        "fa": "مدیر برنامه‌ریزی و منشی تیم"
+      },
+      "location": {
+        "en": "Remote / Iran",
+        "fa": "ریموت / ایران"
+      },
+      "dates": {
+        "en": "5 years",
+        "fa": "۵ سال"
+      },
+      "current": false,
+      "description": {
+        "en": "Managed planning, coordination and administrative affairs of a software development team specializing in web and blockchain domains.",
+        "fa": "مدیریت برنامه‌ریزی، هماهنگی و امور اداری تیم توسعه نرم‌افزار با تخصص در حوزه وب و بلاکچین."
+      },
+      "achievements": {
+        "en": [
+          "Coordinated team activities and project planning for software development projects",
+          "Supported development workflows in web and blockchain domains",
+          "Maintained structured communication and administrative processes within the team"
+        ],
+        "fa": [
+          "هماهنگی فعالیت‌های تیم و برنامه‌ریزی پروژه‌های توسعه نرم‌افزار",
+          "پشتیبانی از فرآیندهای توسعه در حوزه‌های وب و بلاکچین",
+          "حفظ ارتباط ساختاریافته و فرآیندهای اداری داخل تیم"
+        ]
+      },
+      "technologies": [
+        "Planning",
+        "Coordination",
+        "Documentation"
+      ]
+    },
+    {
+      "company": "Financial Markets (Independent)",
+      "role": {
+        "en": "Securities & Financial Markets Trader",
+        "fa": "معامله‌گر اوراق بهادار و بازارهای مالی"
+      },
+      "location": {
+        "en": "Iran",
+        "fa": "ایران"
+      },
+      "dates": {
+        "en": "8 years",
+        "fa": "۸ سال"
+      },
+      "current": false,
+      "description": {
+        "en": "Active in securities trading (stock market) with additional experience in bonds.",
+        "fa": "فعالیت در معاملات اوراق بهادار (بورس) همراه با تجربه در اوراق قرضه."
+      },
+      "achievements": {
+        "en": [
+          "Developed practical market analysis skills and trading strategies over 8 years",
+          "Gained hands-on experience in securities and limited bond trading"
+        ],
+        "fa": [
+          "توسعه مهارت‌های عملی تحلیل بازار و استراتژی‌های معاملاتی طی ۸ سال",
+          "کسب تجربه عملی در معاملات اوراق بهادار و تجربه محدود در اوراق قرضه"
+        ]
+      },
+      "technologies": [
+        "Market Analysis",
+        "Trading Strategies"
+      ]
+    },
+    {
+      "company": "HoorTab Medical Equipment",
+      "role": {
+        "en": "Surgical Needle Production Specialist",
+        "fa": "متخصص تولید سوزن جراحی"
+      },
+      "location": {
+        "en": "Iran",
+        "fa": "ایران"
+      },
+      "dates": {
+        "en": "1 year",
+        "fa": "۱ سال"
+      },
+      "current": false,
+      "description": {
+        "en": "Worked in the surgical needle production section performing highly precise and delicate manufacturing tasks.",
+        "fa": "فعالیت در بخش تولید سوزن جراحی با انجام کارهای بسیار ظریف و با دقت بالا."
+      },
+      "achievements": {
+        "en": [
+          "Executed precision manufacturing processes requiring exceptional attention to detail and consistency"
+        ],
+        "fa": [
+          "انجام فرآیندهای تولیدی دقیق نیازمند توجه و ظرافت بسیار بالا و ثبات کیفیت"
+        ]
+      },
+      "technologies": [
+        "Precision Manufacturing",
+        "Quality Focus"
+      ]
+    },
+    {
+      "company": "Abhar Plastic Industries",
+      "role": {
+        "en": "Quality Control & Injection Machine Operator",
+        "fa": "کنترل کیفیت و اپراتور دستگاه تزریق"
+      },
+      "location": {
+        "en": "Abhar, Iran",
+        "fa": "ابهر، ایران"
+      },
+      "dates": {
+        "en": "6 months",
+        "fa": "۶ ماه"
+      },
+      "current": false,
+      "description": {
+        "en": "Worked in quality control of production and later as injection molding machine operator.",
+        "fa": "فعالیت در بخش کنترل کیفیت تولیدات و سپس به‌عنوان اپراتور دستگاه تزریق."
+      },
+      "achievements": {
+        "en": [
+          "Performed quality inspection of plastic products",
+          "Operated injection molding machines in the production line"
+        ],
+        "fa": [
+          "بازرسی و کنترل کیفیت محصولات پلاستیکی",
+          "کار با دستگاه‌های تزریق در خط تولید"
+        ]
+      },
+      "technologies": [
+        "Quality Control",
+        "Machine Operation"
+      ]
+    },
+    {
+      "company": "Construction Materials Company",
+      "role": {
+        "en": "Warehouse Keeper",
+        "fa": "انباردار"
+      },
+      "location": {
+        "en": "Iran",
+        "fa": "ایران"
+      },
+      "dates": {
+        "en": "Several months",
+        "fa": "چند ماه"
+      },
+      "current": false,
+      "description": {
+        "en": "Managed warehouse operations and inventory of construction materials.",
+        "fa": "مدیریت امور انبار و موجودی مصالح ساختمانی."
+      },
+      "achievements": {
+        "en": [
+          "Handled inventory tracking and warehouse organization"
+        ],
+        "fa": [
+          "پیگیری موجودی و سازماندهی انبار"
+        ]
+      },
+      "technologies": [
+        "Inventory Management"
+      ]
+    },
+    {
+      "company": "LunaFam (Paint Company)",
+      "role": {
+        "en": "Laboratory Technician",
+        "fa": "تکنسین آزمایشگاه"
+      },
+      "location": {
+        "en": "Abhar, Iran",
+        "fa": "ابهر، ایران"
+      },
+      "dates": {
+        "en": "1 month",
+        "fa": "۱ ماه"
+      },
+      "current": false,
+      "description": {
+        "en": "Worked in the laboratory section of a paint manufacturing company.",
+        "fa": "فعالیت در بخش آزمایشگاه شرکت تولید رنگ."
+      },
+      "achievements": {
+        "en": [
+          "Supported laboratory processes related to paint production"
+        ],
+        "fa": [
+          "پشتیبانی از فرآیندهای آزمایشگاهی مرتبط با تولید رنگ"
+        ]
+      },
+      "technologies": [
+        "Laboratory Work"
+      ]
+    }
+  ],
+  "caseStudy": {
+    "title": {
+      "en": "Precision Manufacturing in Medical Equipment",
+      "fa": "تولید دقیق در تجهیزات پزشکی"
+    },
+    "challenge": {
+      "en": "Performing highly delicate and precision-critical tasks in surgical needle production where even minor errors could affect product quality and safety.",
+      "fa": "انجام کارهای بسیار ظریف و حساس در تولید سوزن جراحی که کوچک‌ترین خطا می‌توانست کیفیت و ایمنی محصول را تحت تأثیر قرار دهد."
+    },
+    "approach": {
+      "en": "Applied high concentration, systematic attention to detail, and consistent quality focus throughout the production process.",
+      "fa": "به‌کارگیری تمرکز بالا، توجه سیستماتیک به جزئیات و تمرکز مداوم بر کیفیت در سراسر فرآیند تولید."
+    },
+    "outcome": {
+      "en": "Successfully delivered precise manufacturing work requiring exceptional accuracy and reliability.",
+      "fa": "انجام موفق کارهای تولیدی دقیق نیازمند صحت و قابلیت اطمینان بسیار بالا."
+    },
+    "metrics": [],
+    "tech": [
+      "Precision Manufacturing",
+      "Quality Control"
+    ]
+  },
+  "projects": [],
+  "skills": [
+    {
+      "category": {
+        "en": "Core Strengths",
+        "fa": "توانمندی‌های کلیدی"
+      },
+      "items": [
+        {
+          "name": "Fast Learning",
+          "level": 95
+        },
+        {
+          "name": "High Precision",
+          "level": 95
+        },
+        {
+          "name": "Team Coordination",
+          "level": 90
+        },
+        {
+          "name": "Time Management",
+          "level": 90
+        },
+        {
+          "name": "Communication",
+          "level": 90
+        },
+        {
+          "name": "Problem Solving",
+          "level": 88
+        },
+        {
+          "name": "Planning",
+          "level": 90
+        },
+        {
+          "name": "Adaptability",
+          "level": 92
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "Operational Skills",
+        "fa": "مهارت‌های عملیاتی"
+      },
+      "items": [
+        {
+          "name": "Accounting",
+          "level": 80
+        },
+        {
+          "name": "Microsoft Office (Word, Excel, PowerPoint)",
+          "level": 85
+        },
+        {
+          "name": "Quality Control",
+          "level": 85
+        },
+        {
+          "name": "Industrial Machine Operation",
+          "level": 80
+        },
+        {
+          "name": "Inventory & Warehouse",
+          "level": 78
+        },
+        {
+          "name": "Laboratory Support",
+          "level": 75
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "Practical Skills",
+        "fa": "مهارت‌های عملی"
+      },
+      "items": [
+        {
+          "name": "Driving",
+          "level": 90
+        },
+        {
+          "name": "Cooking",
+          "level": 85
+        },
+        {
+          "name": "Sewing",
+          "level": 80
+        },
+        {
+          "name": "Crochet",
+          "level": 80
+        },
+        {
+          "name": "Flower & Doll Making",
+          "level": 85
+        },
+        {
+          "name": "Childcare",
+          "level": 90
+        }
+      ]
+    }
+  ],
+  "techStack": [
+    "Microsoft Word",
+    "Microsoft Excel",
+    "Microsoft PowerPoint",
+    "Accounting",
+    "Quality Control",
+    "Production Planning",
+    "Inventory Management",
+    "Market Analysis"
+  ],
+  "education": [
+    {
+      "degree": {
+        "en": "B.Sc. Applied Mathematics",
+        "fa": "کارشناسی ریاضی کاربردی"
+      },
+      "school": {
+        "en": "Payame Noor University – Abhar",
+        "fa": "دانشگاه پیام نور ابهر"
+      },
+      "dates": {
+        "en": "2000 — 2005",
+        "fa": "۱۳۷۹ — ۱۳۸۴"
+      },
+      "note": {
+        "en": "Started in Pure Mathematics and later switched to Applied Mathematics.",
+        "fa": "شروع با گرایش ریاضی محض و سپس تغییر به ریاضی کاربردی."
+      }
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Word – Technical & Vocational Certificate",
+      "year": ""
+    },
+    {
+      "name": "Accounting – Technical & Vocational Certificate",
+      "year": ""
+    },
+    {
+      "name": "Flower Making Course",
+      "year": ""
+    },
+    {
+      "name": "Doll Making Course",
+      "year": ""
+    }
+  ],
+  "languages": [
+    {
+      "name": {
+        "en": "Persian (Farsi)",
+        "fa": "فارسی"
+      },
+      "level": {
+        "en": "Native",
+        "fa": "زبان مادری"
+      },
+      "dots": 5
+    },
+    {
+      "name": {
+        "en": "Turkish (Azerbaijani)",
+        "fa": "ترکی (آذری)"
+      },
+      "level": {
+        "en": "Native",
+        "fa": "زبان مادری"
+      },
+      "dots": 5
+    },
+    {
+      "name": {
+        "en": "Arabic",
+        "fa": "عربی"
+      },
+      "level": {
+        "en": "Upper-Intermediate",
+        "fa": "متوسط به بالا"
+      },
+      "dots": 4
+    },
+    {
+      "name": {
+        "en": "English",
+        "fa": "انگلیسی"
+      },
+      "level": {
+        "en": "Intermediate",
+        "fa": "متوسط"
+      },
+      "dots": 3
+    },
+    {
+      "name": {
+        "en": "Tati",
+        "fa": "تاتی"
+      },
+      "level": {
+        "en": "Familiar",
+        "fa": "آشنایی"
+      },
+      "dots": 2
+    }
+  ],
+  "testimonials": [],
+  "speaking": [],
+  "community": [],
+  "references": [
+    {
+      "name": "Amirali Jamaat",
+      "role": {
+        "en": "Software Engineer · Programming Specialist",
+        "fa": "مهندس کامپیوتر · متخصص نرم‌افزار و برنامه‌نویسی"
+      },
+      "contact": "",
+      "relation": {
+        "en": "Professional reference",
+        "fa": "معرف حرفه‌ای"
+      }
+    },
+    {
+      "name": "Haj Agha Morteza Azarbayjani",
+      "role": {
+        "en": "First-Grade Attorney · Retired Judge",
+        "fa": "وکیل پایه یک دادگستری · قاضی بازنشسته"
+      },
+      "contact": "",
+      "relation": {
+        "en": "Professional reference",
+        "fa": "معرف حرفه‌ای"
+      }
+    }
+  ],
+  "achievements": [
+    {
+      "text": {
+        "en": "Successfully managed planning and coordination in a technology startup for 5 years",
+        "fa": "مدیریت موفق برنامه‌ریزی و هماهنگی در یک استارتاپ فناوری به مدت ۵ سال"
+      }
+    },
+    {
+      "text": {
+        "en": "Built 8 years of practical experience in financial markets and securities trading",
+        "fa": "کسب ۸ سال تجربه عملی در بازارهای مالی و معاملات اوراق بهادار"
+      }
+    },
+    {
+      "text": {
+        "en": "Performed high-precision industrial work in medical equipment manufacturing",
+        "fa": "انجام کارهای صنعتی با دقت بسیار بالا در تولید تجهیزات پزشکی"
+      }
+    }
+  ],
+  "interests": [
+    {
+      "en": "Competitive & record-based games",
+      "fa": "بازی‌های رکوردی و رقابتی"
+    },
+    {
+      "en": "Sports (Table Tennis, Football, Volleyball, Badminton)",
+      "fa": "ورزش (تنیس روی میز، فوتبال، والیبال، بدمینتون)"
+    },
+    {
+      "en": "Traditional Iranian music",
+      "fa": "موسیقی سنتی ایرانی"
+    },
+    {
+      "en": "Chess",
+      "fa": "شطرنج"
+    },
+    {
+      "en": "Nature walks, hiking & mountaineering",
+      "fa": "پیاده‌روی، گردش در طبیعت و کوه‌نوردی"
+    },
+    {
+      "en": "Traveling to natural and historical sites",
+      "fa": "سفر به جاهای دیدنی طبیعی و باستانی"
+    },
+    {
+      "en": "Friendly gatherings",
+      "fa": "نشست‌های دوستانه"
+    },
+    {
+      "en": "Astronomy",
+      "fa": "نجوم"
+    }
+  ]
+}
+</script>
+<script src="js/app.js"></script>
+</body>
+</html>
